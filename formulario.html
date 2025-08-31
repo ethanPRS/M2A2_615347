@@ -5,7 +5,7 @@
     </head>
     <body>
         <div>
-            <form>
+            <form action="formulario.html" method="get">
                 <table border="1">
                     <thead>
                         <tr>
@@ -14,40 +14,99 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!--Nombre del Jugador-->
                         <tr>
-                            <td>Nombre del Jugador</td>
-                            <td></td>
+                            
+                            <td><label for="nombreJugador">Nombre del Jugador</label>
+                            </td>
+                            <td>
+                                <input type="text" id="nombreJugador" name="nombreJugador"
+                                placeholder="Escribe tu nombre...">
+                            </td>
                         </tr>
+                        <!--Correo Electronico-->
                         <tr>
-                            <td>Correo Electronico</td>
-                            <td></td>
+                            <td><label for="correo">Correo</label></td>
+                            <td>
+                                <input type="email" id="correo"
+                                name="correo"
+                                placeholder="ejemplo@correo.com">
+                            </td>
                         </tr>
+                        <!--Edad-->
                         <tr>
-                            <td>Edad</td>
-                            <td></td>
+                            <td><label for="edad">Edad</label></td>
+                            <td>
+                                <input type="number"
+                                id="edad"
+                                name="edad"
+                                placeholder="18">
+                            </td>
                         </tr>
+                        <!--Nickname-->
                         <tr>
-                            <td>Nickname en el juego</td>
-                            <td></td>
+                            <td><label for="nickname">Nickname</label></td>
+                            <td>
+                                <input type="text"
+                                id="nickname"
+                                name="nickname"
+                                placeholder="Whimpybrush79762">
+                            </td>
                         </tr>
+                        <!--Categoria-->
                         <tr>
-                            <td>Categoria</td>
-                            <td></td>
+                            <td><label for="categoria">Categoria</label></td>
+                            <td>
+                                <input type="radio"
+                                id="principiante"
+                                name="categoria">
+                                <label for="principiante">Principiante</label>
+                                <input type="radio"
+                                id="intermedio"
+                                name="categoria">
+                                <label for="intermedio">Intermedio</label>
+                                <input type="radio"
+                                id="experto"
+                                name="categoria">
+                                <label for="experto">Experto</label>
+                            </td>
                         </tr>
+                        <!--Juegos Favoritos-->
                         <tr>
-                            <td>Juegos Favoritos</td>
-                            <td></td>
+                            <td><label for="nickname">Juegos Favoritos</label></td>
+                            <td>
+                                <input type="checkbox"
+                                id="fifa"
+                                name="juegos"
+                                value="fifa">
+                                <label for="fifa">FIFA</label>
+                                <input type="checkbox"
+                                id="lol"
+                                name="juegos"
+                                value="lol">
+                                <label for="lol">LOL</label>
+                                <input type="checkbox"
+                                id="minecraft"
+                                name="juegos"
+                                value="minecraft">
+                                <label for="minecraft">Minecraft</label>
+                            </td>
                         </tr>
+                        <!--Fecha Inscripcion-->
                         <tr>
-                            <td>Fecha de Inscripcion</td>
-                            <td></td>
+                            <td><label for="date">Fecha de Inscripcion</label></td>
+                            <td>
+                                <input type="date"
+                                id="fecha"
+                                name="fecha">
+                            </td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
                             <td colspan="2">
-                                <button>Enviar</button>
-                                <button>Restablecer</button>
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Restablecer</button>
                             </td>
                         </tr>
                     </tfoot>
